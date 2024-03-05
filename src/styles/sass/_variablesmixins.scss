@@ -1,0 +1,11 @@
+$background: #1B1A17;
+$primary: #1F1E1B;
+$complimentary1:#A35709;
+$complimentary2: #FF8303;
+$white: #F0E3CA;
+
+@mixin commonBorderPadding {
+    border: 2px solid $complimentary2;
+    padding: 8px;
+    border-radius: 4px;
+}

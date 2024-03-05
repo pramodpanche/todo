@@ -1,0 +1,169 @@
+body {
+  background-color: #1b1a17;
+  color: #f0e3ca;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+body h3,
+body h5 {
+  margin: 4px 0px;
+}
+body input[type="text"] {
+  width: 100%;
+  padding: 8px 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #09a3a3;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #1f1e1b;
+  color: #f0e3ca;
+}
+body textarea {
+  width: 100%;
+  padding: 8px 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #a35709;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #1f1e1b;
+  color: #f0e3ca;
+  max-height: 200px;
+  font-family: "Inter", sans-serif;
+}
+body .addBtn {
+  border: 2px solid #ff8303;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #1b1a17;
+  color: #ff8303;
+  font-size: 32px;
+  margin: 8px;
+  min-width: 65px;
+  cursor: pointer;
+}
+
+.HeaderWrapper {
+  border: 2px solid #ff8303;
+  padding: 8px;
+  font-style: italic;
+  border-radius: 4px;
+}
+
+.HomeWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.HomeWrapper .addNew {
+  margin: 8px;
+  display: flex;
+}
+.HomeWrapper .taskLoopWrapper {
+  border: 2px solid #ff8303;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #a35709;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f1e1b;
+  padding: 32px;
+  width: 80%;
+  margin: 100px;
+}
+.HomeWrapper .taskLoopWrapper .noTask {
+  border-top: 3px solid #03eeff;
+  border-bottom: 3px solid #038eff;
+  border-width: 50%;
+}
+.HomeWrapper .taskLoopWrapper .TaskCardWrapper {
+  border: 2px solid #ff03c0;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #a35709;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 250px;
+  min-width: 250px;
+  margin: 12px;
+}
+.HomeWrapper .taskLoopWrapper .TaskCardWrapper .title {
+  font-size: 24px;
+}
+.HomeWrapper .taskLoopWrapper .TaskCardWrapper .desc {
+  font-size: 12px;
+}
+.HomeWrapper .taskLoopWrapper .TaskCardWrapper .addBtn {
+  font-size: 16px;
+  min-width: unset;
+  border: 1px solid #0951a3;
+  margin-top: 24px;
+}
+.HomeWrapper .taskLoopWrapper .TaskCardWrapper .addBtn img {
+  width: 16px;
+}
+
+.PopupWrapper {
+  width: 100%;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-content {
+  min-width: 450px;
+  background-color: #1f1b1b;
+  padding: 24px;
+  text-align: center;
+  border-radius: 4px;
+  border-top: 7px solid #0389ff;
+}
+.popup-content .addBtn {
+  border: 1px solid #0385ff;
+}
+
+@media screen and (max-width: 480px) {
+  .HomeWrapper .taskLoopWrapper {
+    border: none;
+    background-color: #1f1e1b;
+    padding: 8px;
+    width: 100%;
+    margin: unset;
+  }
+
+  .HomeWrapper .taskLoopWrapper .TaskCardWrapper {
+    width: max-content;
+    min-width: 300px;
+    max-width: 300px;
+    margin: 12px;
+  }
+  .HomeWrapper .taskLoopWrapper .TaskCardWrapper .addBtn img {
+    width: 16px;
+  }
+  .HomeWrapper .taskLoopWrapper .TaskCardWrapper .title {
+    font-size: 24px;
+  }
+  .HomeWrapper .taskLoopWrapper .TaskCardWrapper .desc {
+    font-size: 12px;
+  }
+  .HomeWrapper .taskLoopWrapper .TaskCardWrapper .addBtn {
+    font-size: 16px;
+    min-width: unset;
+    border: 1px solid #a35709;
+    margin-top: 24px;
+  }
+}
